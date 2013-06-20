@@ -117,7 +117,7 @@ We only consider bound motion~\citep{Wilkins1972}. The radial motion covers a ra
 \begin{equation}
 r = \frac{p M}{1+e\cos\psi},
 \end{equation}
-introducing eccentricity $e$, (dimensionless) semilatus rectum $p$ and relativistic anomaly $\psi$~\cite{Darwin1961,Drasco2004}. Whilst $r$ oscillates between its maximum and minimum values, $\psi$ increases secularly increasing by $2\pi$ across an orbit. The poloidal motion covers a range $\theta_- \leq \theta \leq \pi - \theta_-$. We also parametrize this motion in terms of an angular phase \chi, according to~\cite{Drasco2004}
+introducing eccentricity $e$, (dimensionless) semilatus rectum $p$ and relativistic anomaly $\psi$~\cite{Darwin1961,Drasco2004}. Whilst $r$ oscillates between its maximum and minimum values, $\psi$ increases secularly increasing by $2\pi$ across an orbit. The poloidal motion covers a range $\theta_- \leq \theta \leq \pi - \theta_-$. We also parametrize this motion in terms of an angular phase $\chi$, according to~\cite{Drasco2004}
 \begin{equation}
 \cos\theta = \cos\theta_-\cos\chi.
 \end{equation}
@@ -146,13 +146,13 @@ The geodesic equations for coordinate time $t$ and azimuthal angle $\phi$ are ju
 \begin{subequations}
 \begin{eqnarray}
 \diff{t}{\lambda} & = & \sum_{k_r,\,k_\theta}T_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right], \\
-\diff{\phi}{\lambda} & = & \sum_{k_r,\,k_\theta}\Phi_{k_r\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right]. \\
+\diff{\phi}{\lambda} & = & \sum_{k_r,\,k_\theta}\Phi_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right]. \\
 \label{eq:Mino-Fourier}
 \end{eqnarray}
 \end{subequations}
-The $0\,0$ coefficients in these series give the average secular rate of increase of these quantities. We define
+The $0,\,0$ coefficients in these series give the average secular rate of increase of these quantities. We define
 \begin{equation}
-\Gamma = T_{0\,0}, \quad \Upsilon_\phi = \Phi_{0\,0}
+\Gamma = T_{0,\,0}, \quad \Upsilon_\phi = \Phi_{0,\,0}
 \end{equation}
 to act as Mino time frequencies. We can now convert to coordinate time frequencies using
 \begin{equation}
@@ -181,11 +181,12 @@ To follow the evolution of the inspiral we must have a model for the self-force.
 \section{Location of resonances}
 
 The first step in studying the effect of transient resonance is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosing of the) inclination angle of the $\nu = 2/5$ resonance surface for a BH of spin $a_\ast = 0.95$.
-\begin{figure*}[htbp]
+\begin{figure}[htp]
 \centering
-\caption{\label{fig:res-plane-2-5-95}Location of the $2/5$ resonance surface for a $a_\ast = 0.95$ BH in terms of orbital semilatus rectum $p$, eccentricity $e$ and inclination $\iota$.}
-\end{figure*}
-The resonances occur at relatively small periapses, corresponding to regions of strong-field gravity. There are two surfaces, the primary plane and the incomplete, inner surface. The inner surface only appears for high spins and is more expansive for smaller $\nu$. That there can be two surfaces is not surprising: it is known that there exist isofrequency pairings where two distinct sets of orbital elements can have the same frequencies~\cite{Warburton2011}; here we have a weaker requirement that the ratio $\Omega_r/\Omega_\theta$ is the same.
+\includegraphics[width=0.46\textwidth]{Fig_res-2-5-95}
+\caption{\label{fig:res-plane-2-5-95}Location of the $2/5$ resonance surface for an $a_\ast = 0.95$ BH in terms of orbital semilatus rectum $p$, eccentricity $e$ and inclination $\iota$.}
+\end{figure}
+The resonances occur at relatively small periapses, corresponding to regions of strong-field gravity. There are two surfaces, the primary plane and the incomplete, inner surface. The inner surface only appears for high spins and is more expansive for smaller $\nu$. That there can be two surfaces is not surprising: it is known that there exist isofrequency pairings where two distinct sets of orbital elements can have the same frequencies~\cite{Warburton2013}; here we have a weaker requirement that the ratio $\Omega_r/\Omega_\theta$ is the same.
 
 Similar resonance surfaces can be found for other spin values and for other resonances. When considering the full parameter set of $\{p,e,\iota,a_\ast,\nu\}$ it is apparent search for resonances becomes expensive as a consequence of the dimensionality. It is therefore useful to have a guide of where to look. We shall attempt to build a model for the primary plane. It should be more important for the evolution of inspirals as it covers a larger range of eccentricities and inclinations, and occurs at a larger semilatus rectum, so there is more time before the eventual merger. The secondary surface is confined to small periapse, so it would be prudent to check the later stages of an inspiral for resonances.
 
@@ -212,7 +213,13 @@ c_0 = -0.02332, & d_0 = 0.7968, & d_1 = 0.3115.
 \end{array}
 \end{equation} 
 %These were fitted for resonances with $\nu = 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 2/5, 3/7, 1/2, 4/7, 3/5, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 9/10, 19/20, 49/50, 99/100$, with BH spins of $a_\ast = 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.93, 0.95, 0.97, 0.99, 0.999$. 
-Using this approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1$ in absolute terms. The largest fractional error is $\sim50\%$, this is for $a\rightarrow 1$ and $\nu \rightarrow 0$, and corresponds to small $p$ such that the absolute error is still small. Taking the root-mean-square across $e$ and $\iota$, the fractional error for a given $a_\ast$ and $\nu$ never exceeds $9\%$ and is typically less than $4\%$.
+Using this approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1$ in absolute terms. The relative error in the semilatus recutm is illustrated in \figref{p-error}
+\begin{figure*}[htp]
+\centering
+\centerline{\includegraphics[width=0.47\textwidth]{Fig_fit-error-max}\quad\includegraphics[width=0.47\textwidth]{Fig_fit-error-RMS}}
+\caption{\label{fig:p-error}Relative error in the approximate semilatus rectum compared to the accurate numerical result as a function of BH spin $a_\ast$ and resonance ratio $\nu$. The left panel shows the maximum relative error and the right shows the root-mean-square error, in both cases we are marginalising over eccentricity and inclination.}
+\end{figure*}
+ The largest fractional error is $\sim50\%$, this is for $a\rightarrow 1$ and $\nu \rightarrow 0$, and corresponds to small $p$ such that the absolute error is still small. Taking the root-mean-square across $e$ and $\iota$, the fractional error for a given $a_\ast$ and $\nu$ never exceeds $9\%$ and is typically less than $4\%$.
 
 \section{Importance of resonances}
 
@@ -246,7 +253,7 @@ Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we 
 \end{equation}
 The resonant time-scale should give an indication of the time over which we expect the effects of the resonance to be felt~\cite{Bosley1992}. Consider the phase of the Mino time Fourier expansion on resonance; neglecting the constant, the resonant Fourier component has form
 \begin{equation}
-\varphi_{n_r\,-n_\theta} \simeq \left(n_r\Upsilon_r - n_\theta\Upsilon_\theta\right)\lambda + \left(n_r\dot{\Upsilon_r} - n_\theta\dot{\Upsilon}_\theta\right)\lambda^2 + \ldots
+\varphi_{n_r,\,-n_\theta} \simeq \left(n_r\Upsilon_r - n_\theta\Upsilon_\theta\right)\lambda + \left(n_r\dot{\Upsilon_r} - n_\theta\dot{\Upsilon}_\theta\right)\lambda^2 + \ldots
 \end{equation}
 Typically, the first term is non-zero and this gives the familiar oscillation. On resonance it is zero, leaving the next order term to govern the behaviour~\cite{Flanagan2012}. Only once we have moved far enough away from resonance for the first term to dominate the second do we recapture the non-resonant behaviour. The first term, translating from Mino time to coordinate time, sets $T$, the second sets $\tau\sub{res}$.
 
