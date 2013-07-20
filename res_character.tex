@@ -56,7 +56,7 @@
 
 In the prologue to his classic monograph, Chandrasekhar~\cite{Chandrasekhar1992} celebrates the simplicity of black holes (BHs). The Kerr solution is defined by just two parameters: mass and spin. Despite the baldness of the BH metrics, great intricacies manifest in their properties. This is made evident when a second body is introduced. The two-body problem in general relativity (GR) is well studied. It is of paramount importance for gravitational wave (GW) astronomy, where binary systems are the dominant source of radiation. Correctly modelling the dynamics of these systems is necessary to interpret and extract information from gravitational waveforms.
 
-We have made progress in understanding the general relativistic two-body problem in recent years. Bodies of comparable mass can be studied using numerical relativity. Rapid advances in this field have been made following breakthroughs in 2005~\cite{Pretorius2005,Campanelli2006,Baker2006}. These simulations will allows us to understand BH--BH mergers. Stellar-mass BH mergers are targets for ground-based GW detectors, such as the currently mid-upgrade LIGO~\cite{Harry2010} and Virgo~\cite{Accadia2011}, and the in-construction Kagra~\cite{Kuroda2010}. Massive BH mergers, expected to be the result of galaxy mergers, are potential sources for a space-borne detector such as eLISA~\cite{Amaro-Seoane2012a}. Systems of unequal masses are more challenging to evolve numerically as they complete a larger number of orbits and it is necessary to resolve two different scales. Calculations can instead be performed perturbatively. The paradigm unequal mass system has a stellar mass BH orbiting a massive black hole. These extreme-mass-ratio inspirals produce GWs that are a promising signal for space-borne detectors~\cite{Amaro-Seoane2007}. Despite being well-studied there still remain open questions.
+We have made progress in understanding the general relativistic two-body problem in recent years. Bodies of comparable mass can be studied using numerical relativity. Rapid advances in this field have been made following breakthroughs in 2005~\cite{Pretorius2005,Campanelli2006,Baker2006}. These simulations shall allows us to understand BH--BH mergers. Stellar-mass BH mergers are targets for ground-based GW detectors, such as the currently mid-upgrade LIGO~\cite{Harry2010} and Virgo~\cite{Accadia2011}, and the in-construction Kagra~\cite{Kuroda2010}. Massive BH mergers, expected to be the result of galaxy mergers, are potential sources for a space-borne detector such as eLISA~\cite{Amaro-Seoane2012a}. Systems of unequal masses are more challenging to evolve numerically as they complete a larger number of orbits and it is necessary to resolve two different scales. Calculations can instead be performed perturbatively. The paradigm unequal mass system has a stellar-mass BH orbiting a massive black hole. These extreme-mass-ratio inspirals produce GWs that are a promising signal for space-borne detectors~\cite{Amaro-Seoane2007}. Despite being well-studied there still remain open questions.
 
 In the case of extreme-mass-ratio systems, efforts are concentrated on understanding the gravitational self-force~\cite{Barack2009,Poisson2004}. In the test particle limit the smaller body follows an exact geodesic of the BH's spacetime. Including the effects of the smaller body's finite mass, the background spacetime is perturbed. This back-reaction from this deformation alters the small body's orbital trajectory, and can be modelled as a self-force that moves the body from its geodesic. The self-force is commonly divided into two pieces, dissipative and conservative. The former encapsulates the slow decay of the orbital energy and angular momentum, constants of the motion in the test particle limit, through radiation. The latter shifts the orbital phases inducing precession.
 %The dissipative piece is time-asymmetric and has the larger effect on the evolution of the orbital phase; the conservative piece is time-symmetric and has a smaller influence on the on the phase although this can accumulate over many orbits. % Check time-symmetry argument
@@ -65,11 +65,11 @@ Being able to accurately model the influence of the self-force shall allow us to
 Flanagan and Hinderer~\cite{Flanagan2012} highlighted a qualitatively new phenomenon that occurs in the general relativistic two-body problem, that of transient resonances. Geodesic orbits in GR have three associated frequencies: the radial frequency $\Omega_r$, the polar frequency $\Omega_\theta$ and the azimuthal frequency $\Omega_\phi$. The first two describe libration and the third rotation (except in the case of polar orbits where $\Omega_\theta$ also describes rotation)~\cite{Goldstein2002}. % Section 10.6
 In the weak-field limit these all tend towards the Keplerian frequency; in the strong-field $\Omega_r < \Omega_\theta < \Omega_\phi$ and they may differ significantly. For extreme-mass-ratio systems, the evolution time-scale is much longer than the orbital period such that the motion of the smaller body is approximately geodesic over orbital time-scales. The evolution of the orbit can be approximated as a series of geodesics using the osculating element formalism~\cite{Pound2008,Gair2011a}. During this evolution the frequencies may become commensurate. Resonances occur when the radial and polar frequencies are rational multiples of each other:
 \begin{equation}
-\nu = \frac{\Omega_r}{\Omega_\theta} = \frac{n_\theta}{n_r}
+\nu = \frac{\Omega_r}{\Omega_\theta} = \frac{n_\theta}{n_r},
 \end{equation}
 where $n_r$ and $n_\theta$ are integers (with no common factors). The azimuthal motion is not important because of the axisymmetry of the background spacetime. During resonance, terms in the self-force that usually average to zero can combine coherently, significantly impacting the motion~\cite{Flanagan2012a}.
 
-Geodesic motion in Kerr spacetime can be described by use of the action-angle formalism~\cite{Goldstein2002}. % Chapter 10
+Geodesic motion in Kerr spacetime can be described by use of the action--angle formalism~\cite{Goldstein2002}. % Chapter 10
 We shall consider a body of mass $\mu$ orbiting a BH of mass $M$, where $\eta = \mu/M \ll 1$, and describe the motion in the directions of the standard Boyer--Lindquist coordinates using generalised angle variables $q_\alpha = \{q_t,q_r,q_\theta,q_\phi\}$ \citep{Hinderer2008}. We denote the integrals of the geodesic motion, the generalised action variables, by $J_A$. These are the energy per unit mass $E$, the axial angular momentum per unit mass $L_z$ and the Carter constant per unit mass squared $Q$~\cite{Carter1968}. The system evolves following~\cite{Flanagan2012}
 \begin{subequations}
 \begin{eqnarray}
@@ -77,12 +77,12 @@ We shall consider a body of mass $\mu$ orbiting a BH of mass $M$, where $\eta = 
 \diff{J_A}{\lambda} & = & \eta G_A^{(1)}(q_r,q_\theta,\boldsymbol{J}) + \order{\eta^2},
 \end{eqnarray}
 \end{subequations}
-where $\lambda$ is Mino time~\cite{Mino2003}, and the forcing functions $g_\alpha^{(1)}$ and $G_A^{(1)}$ originate from the first-order self-force. At zeroth order in the mass ratio we recover the limit of purely geodesic motion: the integrals of the motion are actually constants and the angle variables evolve according to is associated frequency $\omega_\alpha$.
+where $\lambda$ is Mino time~\cite{Mino2003}, and the forcing functions $g_\alpha^{(1)}$ and $G_A^{(1)}$ originate from the first-order self-force. At zeroth order in the mass ratio we recover the limit of purely geodesic motion: the integrals of the motion are actually constants and the angle variables evolve according to their associated frequencies $\omega_\alpha$.
 
 The leading order dissipative correction to geodesic motion is calculated following the adiabatic prescription~\cite{Hinderer2008}: by dropping the forcing term $g_\alpha^{(1)}$ (and all higher order terms) and replacing the the forcing term $G_A^{(1)}$ with its average over the $2$-torus parametrized by $q_r$ and $q_\theta$ $\langle G_A^{(1)}\rangle_{q_r,\,q_\theta}$~\cite{Drasco2005}. For most orbits this is sufficient, $G_A^{(1)}$ is given by its average value plus a rapidly oscillating component~\cite{Arnold1988}. % Chapter 5, section 1
-However, this averaging fails when the ratio of frequencies is the ratio of integers. In this case the trajectory does not ergodically fill the $2$-torus but instead traces out a $1$-dimensional subspace.\footnote{For illustrations, see Grossman, Levin and Perez-Giz~\cite{Grossman2012}} There are then contributions to the self-force that no longer average out beyond $\langle G_A^{(1)}\rangle_{q_r,\,q_\theta}$. Intuitively, we expect that this effect will be more important for ratios of small integers as when the integers are large the orbit comes close to all points on the $2$-torus.
+However, this averaging fails when the ratio of frequencies is the ratio of integers. In this case the trajectory does not ergodically fill the $2$-torus but instead traces out a $1$-dimensional subspace.\footnote{For illustrations, see Grossman, Levin and Perez-Giz~\cite{Grossman2012}.} There are then contributions to the self-force that no longer average out beyond $\langle G_A^{(1)}\rangle_{q_r,\,q_\theta}$. Intuitively, we expect that this effect is more important for ratios of small integers as when the integers are large, the orbit comes close to all points on the $2$-torus.
 
-In this work we seek to characterise the importance of these resonances for the purposes of modelling extreme-mass-ratio inspirals. This requires calculating the impact that passing through a resonance was on the orbital evolution and discovering for which resonances this is significant.
+In this work we seek to characterise the importance of these resonances for the purposes of modelling extreme-mass-ratio inspirals. This requires calculating the impact that passing through a resonance has on the orbital evolution and discovering for which resonances this is significant.
 
 We use geometric units with $G = c = 1$ throughout. We always use $M$ for the mass of the central, massive BH and $a$ as the spin parameter. We also use the dimensionless spin $a_\ast \equiv a/M$; we take the convention that $0 \leq a_\ast < 1$.
 
@@ -90,7 +90,7 @@ We use geometric units with $G = c = 1$ throughout. We always use $M$ for the ma
 
 \subsection{Kerr geodesics}
 
-The evolution of an extreme-mass-ratio ($\eta \ll 1$) system is slow. Instantaneously, the motion of the orbiting mass can be described as geodesic, with the integrals of the motion changing on time-scales of many orbital periods. We analyse the behaviour of resonances with the osculating element framework, where the trajectory is described by a sequence of geodesics which each match onto the motion an a particular instance. It is therefore necessary to develop an understanding of the Kerr geodesics.
+The evolution of an extreme-mass-ratio ($\eta \ll 1$) system is slow. Instantaneously, the motion of the orbiting mass can be described as geodesic, with the integrals of the motion changing on time-scales of many orbital periods. We analyse the behaviour of resonances with the osculating element framework, where the trajectory is described by a sequence of geodesics which each match onto the motion at a particular instance. It is therefore necessary to develop an understanding of the Kerr geodesics.
 
 The geodesic equations may be written as~\cite{Carter1968, Chandrasekhar1992} % section 62
 \begin{subequations}
@@ -106,7 +106,7 @@ where $\Delta = r^2 - 2M r + a^2$; the signs of the $r$ and $\theta$ equations m
 \begin{eqnarray}
 T & = & E\left(r^2 +a^2\right) - aL_z,\\
 V_r & = & T^2 - \Delta\left[r^2 + \left(L_z -aE\right)^2 + Q\right],\\
-V_\theta & = & Q - \cos^2 \theta\left[a^2\left(1 - E^2\right) + {\displaystyle \frac{L_z^2}{\sin^2\theta}}\right]
+V_\theta & = & Q - \cos^2 \theta\left[a^2\left(1 - E^2\right) + {\displaystyle \frac{L_z^2}{\sin^2\theta}}\right].
 \end{eqnarray}
 \end{subequations}
 As an affine parameter we have used Mino time which is related to the proper time $\tau$ by~\cite{Mino2003}
@@ -123,13 +123,13 @@ introducing eccentricity $e$, (dimensionless) semilatus rectum $p$ and relativis
 \begin{equation}
 \cos\theta = \cos\theta_-\cos\chi.
 \end{equation}
-Whilst $\psi$ and $\chi$ are $2\pi$ periodic they are not the canonical action-angle variables~\cite{Schmidt2002}. They are, however, easy to work with.
+Whilst $\psi$ and $\chi$ are $2\pi$ periodic they are not the canonical action-angle variables~\cite{Schmidt2002}; they are, however, easy to work with.
 
-The geodesic motion can equally be described by $\{E,L_z,Q\}$ or $\{p,e,\theta_-\}$~\cite{Schmidt2002}. Converting between them requires finding the solutions of $V_r = 0$ and $V_\theta = 0$. We will employ a slightly different parameter set of $\{p,e,\iota\}$ where we have introduced the inclination~\cite{Ryan1996,Glampedakis2002}
+The geodesic motion can equally be described by $\{E,L_z,Q\}$ or $\{p,e,\theta_-\}$~\cite{Schmidt2002}. Converting between them requires finding the solutions of $V_r = 0$ and $V_\theta = 0$. We employ a slightly different parameter set of $\{p,e,\iota\}$ where we have introduced the inclination~\cite{Ryan1996,Glampedakis2002}
 \begin{equation}
 \tan \iota = \frac{\sqrt{Q}}{L_z}.
 \end{equation}
-This is $0 \leq \iota < \pi/2$ for prograde orbits and $\pi/2 < \iota \leq \pi$ for prograde orbits. Equatorial orbits ($\theta_- = \pi/2$) have $\iota = 0$ or $\pi$ and polar orbits ($\theta_- = 0$) have $\iota = \pi/2$. Whilst formulae exist for conversion between the different parameters, these are complicated and uninsightful, so we do not reproduce them here.\footnote{In practise we find turning points numerically.}
+This is $0 \leq \iota < \pi/2$ for prograde orbits and $\pi/2 < \iota \leq \pi$ for retrograde orbits. Equatorial orbits ($\theta_- = \pi/2$) have $\iota = 0$ or $\pi$ and polar orbits ($\theta_- = 0$) have $\iota = \pi/2$. Whilst formulae exist for conversion between the different parameters, these are complicated and uninsightful, so we do not reproduce them here.\footnote{In practise we find turning points numerically.}
 
 \subsection{Orbital resonances}
 
@@ -148,7 +148,7 @@ The geodesic equations for coordinate time $t$ and azimuthal angle $\phi$ are ju
 \begin{subequations}
 \begin{eqnarray}
 \diff{t}{\lambda} & = & \sum_{k_r,\,k_\theta}T_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right], \\
-\diff{\phi}{\lambda} & = & \sum_{k_r,\,k_\theta}\Phi_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right]. \\
+\diff{\phi}{\lambda} & = & \sum_{k_r,\,k_\theta}\Phi_{k_r,\, k_\theta}\exp\left[-i\left(k_r\Upsilon_r + k_\theta\Upsilon_\theta\right)\right].
 \label{eq:Mino-Fourier}
 \end{eqnarray}
 \end{subequations}
@@ -180,7 +180,7 @@ The dissipative piece causes the frequencies to evolve and, hence, the resonance
 
 \subsection{Self-force model}
 
-To follow the evolution of the inspiral we must have a means of modelling the self-force. In this work we use the same post-Newtonian approximation as Flanagan and Hinderer~\cite{Flanagan2012}. They use the first order post-Newtonian terms of the dissipative self-force formulated in Flanagan and Hinderer~\cite{Flanagan2007} and the conservative force formulated in Iyer and Will~\cite{Iyer1993}, and Kidder~\cite{Kidder1995}. Since only the first post-Newtonian terms are used, this prescription can only be of limited validity in strong fields. Both pieces of the self-force are computed assuming that the spin is small: the dissipative piece contains terms to $\order{a_\ast^2}$ and the conservative piece to $\order{a_\ast}$. This is less than ideal for high spins. While this approximate self-force is not perfect, it should serve as a guide for the behaviour of the full self-force.
+To follow the evolution of the inspiral we must have a means of modelling the self-force. In this work we use the same post-Newtonian approximation as Flanagan and Hinderer~\cite{Flanagan2012}. They use the first-order post-Newtonian terms of the dissipative self-force formulated in Flanagan and Hinderer~\cite{Flanagan2007} and the conservative force formulated in Iyer and Will~\cite{Iyer1993}, and Kidder~\cite{Kidder1995}. Since only the first post-Newtonian terms are used, this prescription can only be of limited validity in strong fields. Both pieces of the self-force are computed assuming that the spin is small: the dissipative piece contains terms to $\order{a_\ast^2}$ and the conservative piece to $\order{a_\ast}$. This is less than ideal for high spins. While this approximate self-force is not perfect, it should serve as a guide for the behaviour of the full self-force.
 
 %For comparison, Flanagan, Hughes and Ruangeri~\cite{Flanagan2012a} use a Teukolsky equation calculation of GW fluxes to account for radiation reaction.
 
@@ -233,7 +233,7 @@ Having determined the location of resonances we may now address their importance
 
 \subsection{Time-scales}
 
-When analysing resonances it is useful to refer to a number of reference time-scales. We shall always use coordinate time $t$, corresponding to what is measured by an observer at infinity, for these. We will use the orbital period $T$, the evolution time-scale $\tau\sub{ev}$, the precession time-scale $\tau\sub{pres}$ and the resonance time-scale $\tau\sub{res}$.
+When analysing resonances it is useful to refer to a number of reference time-scales. We  always use coordinate time $t$, corresponding to what is measured by an observer at infinity, for these. We use the orbital period $T$, the evolution time-scale $\tau\sub{ev}$, the precession time-scale $\tau\sub{pres}$ and the resonance time-scale $\tau\sub{res}$.
 
 The simplest time-scales are the orbital periods $T_r = 2\pi/\Omega_r$, $T_\theta = 2\pi/\Omega_\theta$ and $T_\phi = 2\pi/\Omega_\phi$. These shall be the shortest in our set. We shall use $T$ to denote a time-scale of the same order as the orbital periods.
 
@@ -241,7 +241,7 @@ We define the evolution time-scale as
 \begin{equation}
 \tau\sub{ev} = \frac{\nu}{\dot{\nu}},
 \end{equation}
-where an overdot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu = \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It acts as an inspiral time-scale. It is long in all cases we study $\tau\sub{ev} \sim \order{T/\eta}$. It is this property which makes extreme-mass-ratio inspirals interesting, as we can follow the waveform for many cycles, accruing high signal-to-noise ratios. This is also what allows us to use the adiabatic prescription as it means the trajectory moves slowly through different orbital parameters.
+where an overdot denotes a derivative with respect to $t$. In general, away from resonance, we take $\nu \equiv \Omega_r/\Omega_\theta$. This time-scale sets the period over which there is a significant change in the frequencies. It acts as an inspiral time-scale. It is long in all cases we study, $\tau\sub{ev} \sim \order{T/\eta}$. It is this property which makes extreme-mass-ratio inspirals interesting, as we can follow the waveform for many cycles, accruing high signal-to-noise ratios. This is also what allows us to use the adiabatic prescription, as it means the trajectory moves slowly through different orbital parameters.
 
 We use the precession time-scale
 \begin{equation}
@@ -255,7 +255,7 @@ We also use the resonance time-scale
 \tau\sub{res} = \left[\frac{2\pi}{\left|\langle\dot{\Omega}(0)\rangle_t\right|}\right]^{1/2}.
 \label{eq:t-res}
 \end{equation}
-Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we take to be $t = 0$. The instantaneous $\dot{\Omega}$ depends upon the orbital phase and oscillates about its mean trend over an orbit. We are interested in the averaged behaviour, not the periodic modulations about this, which is why we use the time-average $\langle\dot{\Omega}\rangle_t$. The general trend is that $\Omega$ decreases linearly with time, hence we make the approximation
+Here $\dot{\Omega}(0)$ is the rate of change of $\Omega$ at resonance, which we take to be at $t = 0$. The instantaneous $\dot{\Omega}$ depends upon the orbital phase and oscillates about its mean trend over an orbit. We are interested in the averaged behaviour, not the periodic modulations about this, which is why we use the time-average $\langle\dot{\Omega}\rangle_t$. The general trend is that $\Omega$ decreases linearly with time, hence we make the approximation
 \begin{equation}
 \left|\langle\dot{\Omega}\rangle_t\right| \simeq \left|\frac{\Omega(t)}{t}\right|.
 \end{equation}
@@ -276,7 +276,7 @@ t\sub{pres} \simeq \tau\sub{res}.
 \end{equation}
 The two time-scales are equivalent. We shall preferentially use $\tau\sub{res}$ to denote the resonance width. It is shorter than the inspiral time-scale, but longer than an orbital period, $\tau\sub{res} \sim \order{\sqrt{\eta}\tau\sub{ev}} \sim \order{T/\sqrt{\eta}}$~\cite{Flanagan2012,Gair2011a}; it therefore acts as a bridge between the two time-scales~\cite{Hinderer2008}.
 
-Since we shall be considering Fourier decompositions, in anticipation of future results we shall also define time-scales for the $s$-th resonant frequency harmonic
+Since we shall be considering Fourier decompositions, in anticipation of future results, we shall also define time-scales for the $s$-th resonant frequency harmonic
 \begin{eqnarray}
 \tau_{\mathrm{pres},\,s} & = & \frac{2\pi}{|s|\Omega(t)};\\
 \tau_{\mathrm{res},\,s} & = & \left[\frac{2\pi}{\left|\langle s\dot{\Omega}(0)\rangle_t\right|}\right]^{1/2}.
