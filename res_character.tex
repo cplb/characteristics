@@ -173,10 +173,10 @@ One might be concerned about the nature of resonances following the inclusion of
 This should ensure that, in general, there are only small shifts in the orbital frequencies. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply~\cite{Moser1973}. % Chapter V section 1. c) 
 This is a further reason why resonances merit in-depth investigation.}
 The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values; a generic example of this behaviour is shown in \figref{wibbles}.
-\begin{figure}[htp]
+\begin{figure}[tbhp]
 \centering
 \includegraphics[width=0.46\textwidth]{Fig_ad_vs_inst_wibble}
-\caption{\label{fig:wibbles}Evolution of the frequency ratio $\nu$ under both adiabatic (solid line) and instantaneous evolutions. The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of Arnold~\cite{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$ and $\eta = 10^{-6}$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M$.}
+\caption{\label{fig:wibbles}Evolution of the frequency ratio $\nu$ under both adiabatic (solid line) and instantaneous evolutions. The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of Arnold~\cite{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$, $\eta = 10^{-6}$ and $a_\ast = 0.9$, the initial orbital parameters are $p = 10$, $e = 0.7$ and $\cos \iota = 0.2$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M$.}
 \end{figure}
 However, there shall be a time span when the frequencies are consistently close to being commensurate. During this time the trajectory appears similar to a resonant trajectory, filling only a smaller region of the parameter space. It is this time period that is of interest for transient resonances~\cite{Bosley1992}.
 
@@ -192,8 +192,8 @@ To follow the evolution of the inspiral we must have a means of modelling the se
 
 \section{Location of resonances}
 
-The first step in studying the effect of transient resonance is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosine of the) inclination angle of the $\nu = 2/5$ resonance surface for a BH of spin $a_\ast = 0.95$.
-\begin{figure}[htp]
+The first step in studying the effect of transient resonance is to locate orbital parameters for which the frequencies are commensurate. We can calculate the frequencies and so we are left with the problem of solving $\Omega = n_r \Omega_r - n_\theta \Omega_\theta = 0$ numerically. \Figref{res-plane-2-5-95} shows the semilatus rectum, eccentricity and (cosine of the) inclination angle of the $\nu = 2/5$ resonance surface for a BH of spin $a_\ast = 0.95$. 
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=0.46\textwidth]{Fig_res-2-5-95}
 \caption{\label{fig:res-plane-2-5-95}Location of the $2/5$ resonance surface for an $a_\ast = 0.95$ BH in terms of orbital semilatus rectum $p$, eccentricity $e$ and inclination $\iota$.}
@@ -225,13 +225,13 @@ c_0 = -0.02332, & d_0 = 0.7968, & d_1 = 0.3115.
 \end{array}
 \end{equation} 
 %These were fitted for resonances with $\nu = 1/7, 1/6, 1/5, 1/4, 2/7, 1/3, 2/5, 3/7, 1/2, 4/7, 3/5, 2/3, 5/7, 3/4, 4/5, 5/6, 6/7, 9/10, 19/20, 49/50, 99/100$, with BH spins of $a_\ast = 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.93, 0.95, 0.97, 0.99, 0.999$. 
-Using this approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1$ in absolute terms. The relative error in the semilatus rectum is illustrated in \figref{p-error}.
+Using this approximation, the maximum error in $p$ for a given $a_\ast$ and $\nu$ is typically $\sim10\%$ and less that $1$ in absolute terms. The relative error in the semilatus rectum is illustrated in \figref{p-error}. 
 \begin{figure*}[htp]
 \centering
 \centerline{\includegraphics[width=0.47\textwidth]{Fig_fit-error-max}\quad\includegraphics[width=0.47\textwidth]{Fig_fit-error-RMS}}
 \caption{\label{fig:p-error}Relative error in the approximate semilatus rectum compared to the accurate numerical result as a function of BH spin $a_\ast$ and resonance ratio $\nu$. The left panel shows the maximum relative error and the right shows the root-mean-square error, in both cases we are marginalising over eccentricity and inclination.}
 \end{figure*}
- The largest fractional error is $\sim50\%$, this is for $a\rightarrow 1$ and $\nu \rightarrow 0$, and corresponds to small $p$, such that the absolute error is still small. Taking the root-mean-square across $e$ and $\iota$, the fractional error for a given $a_\ast$ and $\nu$ never exceeds $9\%$ and is typically less than $4\%$.
+The largest fractional error is $\sim50\%$, this is for $a\rightarrow 1$ and $\nu \rightarrow 0$, and corresponds to small $p$, such that the absolute error is still small. Taking the root-mean-square across $e$ and $\iota$, the fractional error for a given $a_\ast$ and $\nu$ never exceeds $9\%$ and is typically less than $4\%$.
 
 \section{Importance of resonances}
 
@@ -274,7 +274,7 @@ Typically, the first term is non-zero and this gives the familiar oscillation. O
 Since we have argued that the effect of resonance can be thought of as a consequence of not densely covering the $\psi$--$\chi$ $2$-torus, we might expect that $\tau\sub{pres}$, as well as $\tau\sub{res}$, could be used for setting the resonance duration: the resonance ends once sufficient time has elapsed that the $2$-torus could be filled. This is indeed the case. Let $t\sub{pres}$ be the time taken to fill the torus, then
 \begin{eqnarray}
 t\sub{pres} & = & \tau\sub{pres}(t\sub{pres}) \\
- & \simeq & \frac{2\pi}{\left|\dot{\Omega}t\sub{pres}right|}, \nonumber 
+ & \simeq & \frac{2\pi}{\left|\dot{\Omega}t\sub{pres}\right|}, \nonumber 
 \end{eqnarray}
 using \eqnref{t-pres} and substituting $\Omega(t\sub{pres}) \simeq \dot{\Omega}t\sub{pres}$. Rearranging and using \eqnref{t-res} gives
 \begin{equation}
