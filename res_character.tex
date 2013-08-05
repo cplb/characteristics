@@ -172,7 +172,13 @@ On resonance, the radial and poloidal motions are locked together such that we c
 One might be concerned about the nature of resonances following the inclusion of the self-force: true geodesic motion only exists at zeroth order in and whilst it is a good approximation over short time-scales, for small $\eta$ there is a small disparity. The conservative piece of the self-force induces extra precession which leads to a slight shift in the orbital frequencies~\cite{Warburton2012}.\footnote{The Kolmogorov--Arnold--Moser (KAM) theorem states that when an integrable Hamiltonian (i.e., the case for motion in Kerr) is subject to a small perturbation the form of the orbits are preserved albeit slightly deformed~\cite{Arnold1963,Moser1973}. % Chapter II, section 3.3 d)
 This should ensure that, in general, there are only small shifts in the orbital frequencies. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply~\cite{Moser1973}. % Chapter V section 1. c) 
 This is a further reason why resonances merit in-depth investigation.}
-The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values and there shall be a time span when the frequencies are consistently close to being commensurate. During this time the trajectory appears similar to a resonant trajectory, filling only a smaller region of the parameter space. It is this time period that is of interest for transient resonances~\cite{Bosley1992}.
+The dissipative piece causes the frequencies to evolve and, hence, the resonance cannot persist for multiple orbits (without some feedback coupling). In effect, we are really considering a period of time about the resonant crossing. The instantaneous orbital frequencies oscillate back and forth around their averaged values; a generic example of this behaviour is shown in \figref{wibbles}.
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.46\textwidth]{Fig_ad_vs_inst_wibble}
+\caption{\label{fig:wibbles}Evolution of the frequency ratio $\nu$ under both adiabatic (solid line) and instantaneous evolutions. The two coincide at $t = 0$ when $\nu = \nu_0$. The behaviour is general, cf.\ figure 27 of Arnold~\cite{Arnold1988}. In this particular example, $\nu_0 \simeq 0.685$ and $\eta = 10^{-6}$; there are no significant resonances in the plotted span. As a reference for the time-span, the azimuthal orbital period is $T_\phi \simeq 432 M$.}
+\end{figure}
+However, there shall be a time span when the frequencies are consistently close to being commensurate. During this time the trajectory appears similar to a resonant trajectory, filling only a smaller region of the parameter space. It is this time period that is of interest for transient resonances~\cite{Bosley1992}.
 
 %The Kolmogorov--Arnold--Moser (KAM) theorem states that when an integrable Hamiltonian (i.e., the case for motion in Kerr) is subject to a small perturbation the form of the orbits are preserved albeit slightly deformed~\cite{Arnold1963,Moser1973}. % Chapter II, section 3.3 d)
 %When we average the self-force and follow the adiabatic evolution of the trajectory we are exploiting this behaviour. However, the KAM theory only applies for sufficiently incommensurate orbits: close to resonance it does not apply~\cite{Moser1973}. % Chapter V section 1. c)
@@ -245,7 +251,7 @@ where an overdot denotes a derivative with respect to $t$. In general, away from
 
 We use the precession time-scale
 \begin{equation}
-\tau\sub{pres}(t) = \frac{2\pi}{\Omega(t)},
+\tau\sub{pres}(t) = \frac{2\pi}{|\Omega(t)|},
 \label{eq:t-pres}
 \end{equation}
 with $\Omega(t) = n_r \Omega_r(t) - n_\theta \Omega_\theta(t)$, where the frequencies are calculated instantaneously and the integers are for the resonance of interest. This time-scale becomes infinite exactly on resonance, but decreases as we get further from resonance. It measures the relative precession rate of the radial and poloidal motions and hence gives an indication of how long it takes to fill the entire $\psi$--$\chi$ $2$-torus.
@@ -268,7 +274,7 @@ Typically, the first term is non-zero and this gives the familiar oscillation. O
 Since we have argued that the effect of resonance can be thought of as a consequence of not densely covering the $\psi$--$\chi$ $2$-torus, we might expect that $\tau\sub{pres}$, as well as $\tau\sub{res}$, could be used for setting the resonance duration: the resonance ends once sufficient time has elapsed that the $2$-torus could be filled. This is indeed the case. Let $t\sub{pres}$ be the time taken to fill the torus, then
 \begin{eqnarray}
 t\sub{pres} & = & \tau\sub{pres}(t\sub{pres}) \\
- & \simeq & \frac{2\pi}{\dot{\Omega}t\sub{pres}}, \nonumber 
+ & \simeq & \frac{2\pi}{\left|\dot{\Omega}t\sub{pres}right|}, \nonumber 
 \end{eqnarray}
 using \eqnref{t-pres} and substituting $\Omega(t\sub{pres}) \simeq \dot{\Omega}t\sub{pres}$. Rearranging and using \eqnref{t-res} gives
 \begin{equation}
@@ -278,10 +284,10 @@ The two time-scales are equivalent. We shall preferentially use $\tau\sub{res}$ 
 
 Since we shall be considering Fourier decompositions, in anticipation of future results, we shall also define time-scales for the $s$-th resonant frequency harmonic
 \begin{eqnarray}
-\tau_{\mathrm{pres},\,s} & = & \frac{2\pi}{|s|\Omega(t)};\\
+\tau_{\mathrm{pres},\,s} & = & \frac{2\pi}{|s\Omega(t)|};\\
 \tau_{\mathrm{res},\,s} & = & \left[\frac{2\pi}{\left|\langle s\dot{\Omega}(0)\rangle_t\right|}\right]^{1/2}.
 \end{eqnarray}
-These assume $s$ is a non-zero integer.
+These assume that $s$ is a non-zero integer.
 
 \subsection{Resonance enhancement}
 
